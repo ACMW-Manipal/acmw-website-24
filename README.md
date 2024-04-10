@@ -12,6 +12,9 @@ Reference the issue number in your PR description (e.g., "Fixes #1") to link the
 - Collaborate and Review: Engage in discussions with maintainers and reviewers. Make any necessary adjustments based on feedback.
 - Merge and Close: Once your PR is approved, the organizer will merge it into the main branch. The corresponding issue will be closed.
 
+**Note**: 
+You can create your own issue if you want to implement something which is not listed in the existing issues. Click on the `New Issue` button in `Issues` tab to submit your own ideas!
+
 ## How to Get Started
 - Fork the Repository: Click the "Fork" button on the top right of this repository to create your own copy.
 - Clone the Repository: Use `git clone` followed by your forked repository's URL.
