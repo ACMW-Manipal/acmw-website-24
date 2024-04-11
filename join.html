@@ -163,6 +163,14 @@
                                 <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             <div class="form-group">
+                                <label for="email">Branch</label>
+                                <input type="text" class="form-control" id="branch" name="branch" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Year</label>
+                                <input type="text" class="form-control" id="year" name="year" required>
+                            </div>
+                            <div class="form-group">
                                 <label for="interest">Area of Interest</label>
                                 <input type="text" class="form-control" id="interest" name="interest" required>
                             </div>
@@ -185,7 +193,9 @@
             var name = document.forms["applicationForm"]["name"].value;
             var email = document.forms["applicationForm"]["email"].value;
             var interest = document.forms["applicationForm"]["interest"].value;
-            if (name == "" || email == "" || interest == "") {
+            var branch = document.forms["applicationForm"]["branch"].value;
+            var year = document.forms["applicationForm"]["year"].value;
+            if (name == "" || email == "" || branch == "" || year == "" || interest == "") {
                 alert("Please fill out all fields.");
                 return false;
             }
