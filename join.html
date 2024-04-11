@@ -6,7 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACMW Manipal - Join us/Recruitment</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #f8b400;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #f8b400;
+            border-color: #f8b400;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+        .modal-content {
+            background-color: #212121;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-title {
+            color: #f8b400;
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .form-group label {
+            color: #f8b400;
+        }
+
+        .form-control {
+            background-color: #343a40;
+            color: #fff;
+            border-color: #555;
+        }
+
+        .form-control:focus {
+            background-color: #444;
+            border-color: #f8b400;
+            color: #fff;
+        }
+
+        .btn-submit {
+            background-color: #f8b400;
+            border-color: #f8b400;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -34,15 +133,76 @@
     </nav>
 
     <!-- Page content -->
-    <div class="container mt-5">
+    <div class="container">
         <h1>Join us/Recruitment</h1>
-        <p>Information on how to join ACMW Manipal will go here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar libero a orci hendrerit, nec
+            vestibulum metus suscipit.</p>
+        <p>Ready to join ACMW Manipal? Fill out the application form below.</p>
+
+
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#applicationModal">Apply
+            Now</button>
+
+        <div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="applicationModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="applicationModalLabel">Application Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="applicationForm" onsubmit="return validateForm()">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Branch</label>
+                                <input type="text" class="form-control" id="branch" name="branch" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Year</label>
+                                <input type="text" class="form-control" id="year" name="year" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">Area of Interest</label>
+                                <input type="text" class="form-control" id="interest" name="interest" required>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Validate form inputs
+        function validateForm() {
+            var name = document.forms["applicationForm"]["name"].value;
+            var email = document.forms["applicationForm"]["email"].value;
+            var interest = document.forms["applicationForm"]["interest"].value;
+            var branch = document.forms["applicationForm"]["branch"].value;
+            var year = document.forms["applicationForm"]["year"].value;
+            if (name == "" || email == "" || branch == "" || year == "" || interest == "") {
+                alert("Please fill out all fields.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 
 </body>
 
