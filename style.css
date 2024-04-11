@@ -1,0 +1,29 @@
+body {
+    background-color: #b3cde0;
+}
+
+h1, h2, h3 {
+    color: 	#03396c;
+}
+
+p {
+    color: #011f4b;
+}
+
+button {
+    background-color: #6497b1;
+}
+
+.custom-navbar-bg {
+    background-color: #011f4b;
+}
+
+.brand {
+    color: #6497b1;
+    font-size: large;
+}
+
+.brand:hover {
+    color: lightgrey;
+    text-decoration: none;
+}
