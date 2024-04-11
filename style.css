@@ -16,11 +16,18 @@ button {
 
 .custom-navbar-bg {
     background-color: #011f4b;
+    padding: 20px 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px; 
 }
 
 .brand {
     color: #6497b1;
     font-size: large;
+    padding: 10px 15px; 
+    font-size: 20px; 
 }
 
 .brand:hover {
