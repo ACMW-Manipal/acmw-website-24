@@ -45,3 +45,61 @@ button {
     color: lightgrey;
     text-decoration: none;
 }
+
+.btn-primary {
+    background-color: #6497b1;
+    border-color: #6497b1;
+}
+
+.btn-primary:hover {
+    background-color: #4169e1;
+    border-color: #4169e1;
+}
+
+.btn-submit {
+    background-color: #6497b1;
+    border-color: #6497b1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #4169e1;
+    border-color: #4169e1;
+}
+
+.modal-content {
+    background-color: #1f367a;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    color: #ffffff;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.form-group label {
+    color: #fefefe;
+}
+
+.form-control {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #555;
+}
+
+.form-control:focus {
+    background-color: #444;
+    border-color: #ffffff;
+    color: #fff;
+}
