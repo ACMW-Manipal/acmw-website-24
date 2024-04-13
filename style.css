@@ -103,3 +103,12 @@ button {
     border-color: #ffffff;
     color: #fff;
 }
+
+.card img{
+    transition: all 0.6s;
+}
+
+.card img:hover{
+    transform: scale(0.9,0.9);
+    cursor: pointer;
+}
