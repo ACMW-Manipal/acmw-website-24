@@ -199,3 +199,9 @@ h1 {
 .event-info {
     margin-top: 5%;
 }
+
+.contributor img {
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+}

@@ -274,6 +274,34 @@
       <h2 class="text-center">Member Achievements</h2>
       <p class="text-center">Celebrating our members' accomplishments.</p>
     </section>
+
+    <!-- Contributors -->
+    <section id="contributors">
+      <h2 class="text-center">Website Contributors</h2>
+      <div class="container text-center" id="container"></div>
+      <script>
+        let container = document.getElementById("container");
+
+        fetch('https://api.github.com/repos/ACMW-Manipal/acmw-website-24/contributors')
+          .then(response => response.json())
+          .then(data => {
+            data.forEach(element => {
+              let div = document.createElement("div");
+              let image = document.createElement("img");
+              let username = document.createElement("a");
+
+              div.classList.add("contributor");
+              image.src = element["avatar_url"];
+              username.textContent = element["login"];
+              username.href = element["html_url"];
+
+              div.appendChild(image);
+              div.appendChild(username);
+              container.appendChild(div);
+            })
+          })
+      </script>
+    </section>
   </div>
 
   <!-- Footer -->
