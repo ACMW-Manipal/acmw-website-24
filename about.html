@@ -71,6 +71,7 @@
             border-radius: 20px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 10px;
+            height: 620px;;
 
         }
 
@@ -78,6 +79,7 @@
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             max-width: 100%;
+            height: 15rem;
         }
 
         .vision-card-body {
@@ -103,7 +105,21 @@
             text-align: center;
             margin-left: 450px;
         }
-       
+
+        .about-img{
+            transition: all 0.6s;
+            cursor: pointer;
+        }
+        .about-img:hover{
+            transform: scale(0.9,0.9);
+        }
+       .our-mission .card{
+        transition: all 0.6s;
+            cursor: pointer;
+       }
+       .our-mission .card:hover{
+        transform: scale(0.9,0.9);
+       }
     </style>
 
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -136,69 +152,80 @@
 
     <!-- Page content -->
     <div class="container mt-5">
-        <h1 class="center-text">ABOUT US</h1>
+        <h1 class="center-text" style="margin-top: 125px;" >ABOUT US</h1>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row d-flex">
             <div class="col-md-6">
-                <div class="content">
-                    <p class="bgcenter">Background</p>
-                    </div>
-                    <div class="img">
-                        <img src="https://imagetolink.com/ib/PBgj6PBftx.png" alt="img">
-                    </div>
-                
-            </div>
-            <div class="col-md-6">
-                <div class="text-beside-img">
+                <div class="text-beside-img bg-white" style="margin-top: 2rem; width: 30rem; 
+                height: 25rem; font-size: 1.2rem;
+                 padding: 2rem; border-radius: 1rem; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
                     <p>ACM-W supports, celebrates, and advocates internationally for the full engagement of women in all aspects of computer science. The Manipal chapter of ACM-W wishes to carry forward the vision of ACMW in establishing a society that not only motivates young girls to become zealous programmers but also provides them with adequate resources and the right mentor-ship at every step in their path. We are a research-centric group, striving at inclusion and domain-depth.</p>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <p class="bgcenter"></p>
+                    </div>
+                    <div class="img about-img" style="border-radius: 50%;background-color: #4682b4; margin-top: -1rem;
+                    
+                    padding-top: 4rem; padding-left: 2.5rem; width: 25rem; height: 25rem; outline-offset: 2rem solid black;">
+                        <img src="https://imagetolink.com/ib/PBgj6PBftx.png" style="width: 20rem; height: 15rem;" alt="img">
+                    </div>
+                
+            </div>
+            
         </div>
     </div>
      <!-- Our Mission -->
-     <div class="container mt-5">
+
+     <div class="container" style="margin-top: 10rem;">
         <h2 class="center-text">Our Mission</h2>
+        <div class="row our-mission" style="margin-top: 2rem;">
+
+     <div class="container mt-5">
+        <h2 class="center-text" style="margin-bottom: 40px;">Our Mission</h2>
         <div class="row">
+
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" style="border-radius: 1rem; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; cursor: pointer;">
                     <div class="card-body">
-                        <h5 class="card-title">Mission 1</h5>
-                        <p class="card-text">Our mission statement goes here. It should be concise and clear, outlining our main goals and objectives.</p>
+                        <h5 class="card-title">Empowerment Through Education</h5>
+                        <p class="card-text"> ACM-W Manipal is dedicated to empowering women in computer science and related STEM fields by providing educational resources, mentorship programs, and networking opportunities.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" style="border-radius: 1rem; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; cursor: pointer;">
                     <div class="card-body">
-                        <h5 class="card-title">Mission 2</h5>
-                        <p class="card-text">Our mission statement goes here. It should be concise and clear, outlining our main goals and objectives.</p>
+                        <h5 class="card-title">Community Building and Support</h5>
+                        <p class="card-text"> ACM-W Manipal fosters a supportive community where women in computing can connect, collaborate, and share experiences, creating a network of support that encourages career growth and personal development.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" style="border-radius: 1rem; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; cursor: pointer;">
                     <div class="card-body">
-                        <h5 class="card-title">Mission 3</h5>
-                        <p class="card-text">Our mission statement goes here. It should be concise and clear, outlining our main goals and objectives.</p>
+                        <h5 class="card-title">Promotion of Leadership and Excellence</h5>
+                        <p class="card-text">We strive to recognize and celebrate the achievements of women in computing, promoting leadership roles and excellence in research, innovation, and entrepreneurship.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
        <!-- Our Vision -->
-       <div class="vision-heading">
+       <div class="vision-heading" style="margin-top: 10rem;">
        <h1 class="center-text">Our Vision</h1>
     </div>
        
-       <div class="container our-vision-section">
+       <div class="container our-vision-section"  style="background-color: #4682b4;">
         <div class="row">
             <div class="col-md-4">
                 <div class="card vision-card">
                     <img src="https://imagetolink.com/ib/HZH88fAfL1.png" class="card-img-top" alt="...">
                     <div class="vision-card-body">
-                        <h5 class="vision-card-title">Vision 1</h5>
-                        <p class="vision-card-text">Our vision description goes here. It should be brief and convey the essence of our vision for the future.</p>
+                        <h5 class="vision-card-title">A Diverse and Inclusive Tech Landscape</h5>
+                        <p class="vision-card-text"> ACM-W Manipal envisions a future where women are equally represented and valued in all areas of computing and related STEM fields, contributing to a diverse and inclusive tech landscape that drives innovation and progress.</p>
                     </div>
                 </div>
             </div>
@@ -206,8 +233,8 @@
                 <div class="card vision-card">
                     <img src="https://imagetolink.com/ib/cSvTI0Iwty.png" class="card-img-top" alt="...">
                     <div class="vision-card-body">
-                        <h5 class="vision-card-title">Vision 2</h5>
-                        <p class="vision-card-text">Our vision description goes here. It should be brief and convey the essence of our vision for the future.</p>
+                        <h5 class="vision-card-title">Inspiring the Next Generation</h5>
+                        <p class="vision-card-text">We envision inspiring and empowering the next generation of women to pursue careers in computing by providing role models, educational resources, and opportunities for hands-on experience, creating a pipeline of talent that reflects the diversity of society.</p>
                     </div>
                 </div>
             </div>
@@ -215,8 +242,8 @@
                 <div class="card vision-card">
                     <img src="https://imagetolink.com/ib/FyMGFnM9tI.png" class="card-img-top" alt="...">
                     <div class="vision-card-body">
-                        <h5 class="vision-card-title">Vision 3</h5>
-                        <p class="vision-card-text">Our vision description goes here. It should be brief and convey the essence of our vision for the future.</p>
+                        <h5 class="vision-card-title">Continued Growth and Evolution</h5>
+                        <p class="vision-card-text"> We envision ACM-W Manipal as a dynamic and evolving organization that adapts to the changing needs of women in computing, continuously expanding its reach, influence, and impact to ensure sustained progress towards gender equality in the field.</p>
                     </div>
                 </div>
             </div>
@@ -229,6 +256,7 @@
           width: 100%;
           max-width: 800px;
           margin: 0 auto;
+          margin-bottom: 40px;
         }
         .image-container img {
           width: 100%;
@@ -252,10 +280,15 @@
           font-size: 28px;
         }
       </style>
-      <div class="container">
+
+      <div class="container" style="margin-top: 10rem;">
         <h1 class="center-text">Overview of Organization</h1>
+
+      <div class="container">
+        <h1 class="center-text" style="margin-bottom: 40px;">Overview of Organization</h1>
+
         
-        <div class="image-container">
+        <div class="image-container mt-5 mb-5">
           <img src="https://imagetolink.com/ib/vFWtpWiMrA.jpeg" alt="Organization Image">
           <div class="text-overlay">
             
