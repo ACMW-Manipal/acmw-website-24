@@ -32,6 +32,32 @@
         margin-top: 20px;
 
       }
+    .containermember {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .table thead {
+      background-color: #231f54;
+      color: white;
+    }
+    .table th, .table td {
+      padding: 12px 15px;
+      text-align: left;
+    }
+    .table  {
+      background-color: #b4befa;
+    }
+    .table tbody tr:hover {
+      background-color: #9ecbf4;
+    }
     </style>
 </head>
 
@@ -219,10 +245,41 @@
               setInterval(scrollContainer, 30);
             </script>
         <!-- Member Names Section -->
-        <section id="members">
+       
             <h2 class="text-center">Member Names</h2>
-            <p class="text-center">Meet our dedicated members.</p>
-        </section>
+            <div class="containermember">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Alice Johnson</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Bob Brown</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Emily Davis</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
 
         <!-- Member Achievements Section -->
         <section id="achievements">
