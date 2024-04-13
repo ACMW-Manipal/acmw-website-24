@@ -183,6 +183,50 @@ button {
     color: #fff;
 }
 
+#contributors {
+    background-color: #b3cde0;
+    padding: 50px 0;
+}
+
+#contributors h2 {
+    color: #03396c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #03396c;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: #6497b1;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #fff;
+}
+
+.card a:hover {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+=======
 .card img{
     transition: all 0.6s;
 }
