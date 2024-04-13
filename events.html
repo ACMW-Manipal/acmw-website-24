@@ -7,6 +7,8 @@
     <title>ACMW Manipal - Activities/Events</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Abril+Fatface'><link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
@@ -36,15 +38,50 @@
 
     <!-- Page content -->
     <div class="container mt-5">
-        <h1 style="margin-top: 125px;">Activities/Events</h1>
-        <p>List of past, ongoing, and upcoming events will go here.</p>
+        <h1>Activities/Events</h1>
+        <div class="datepicker">
+        </div>
+        <h3 id="#hackathon">Hackathon</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat felis et leo dignissim suscipit. Aenean at leo id nisl lacinia mattis a ac quam. Vestibulum venenatis urna sit amet dictum suscipit. Praesent tincidunt nisi eu odio porttitor, sit amet euismod mauris auctor. In mattis eget nisi nec euismod. Aliquam aliquam est lorem, ac convallis lacus auctor a. Fusce dapibus neque augue, ac semper enim porttitor vel. Aliquam eget nisl ante. Nulla sollicitudin magna in leo vehicula dignissim. Sed pretium tortor sem, non tincidunt elit porta at. Sed sit amet pellentesque tortor. Praesent suscipit elit non leo lobortis, ut eleifend tortor finibus.</p>
+        <h3 id="os-fest">Open Source Fest</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat felis et leo dignissim suscipit. Aenean at leo id nisl lacinia mattis a ac quam. Vestibulum venenatis urna sit amet dictum suscipit. Praesent tincidunt nisi eu odio porttitor, sit amet euismod mauris auctor. In mattis eget nisi nec euismod. Aliquam aliquam est lorem, ac convallis lacus auctor a. Fusce dapibus neque augue, ac semper enim porttitor vel. Aliquam eget nisl ante. Nulla sollicitudin magna in leo vehicula dignissim. Sed pretium tortor sem, non tincidunt elit porta at. Sed sit amet pellentesque tortor. Praesent suscipit elit non leo lobortis, ut eleifend tortor finibus.</p>
+        <h3 id="ui-design-contest">UI Design Contest</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat felis et leo dignissim suscipit. Aenean at leo id nisl lacinia mattis a ac quam. Vestibulum venenatis urna sit amet dictum suscipit. Praesent tincidunt nisi eu odio porttitor, sit amet euismod mauris auctor. In mattis eget nisi nec euismod. Aliquam aliquam est lorem, ac convallis lacus auctor a. Fusce dapibus neque augue, ac semper enim porttitor vel. Aliquam eget nisl ante. Nulla sollicitudin magna in leo vehicula dignissim. Sed pretium tortor sem, non tincidunt elit porta at. Sed sit amet pellentesque tortor. Praesent suscipit elit non leo lobortis, ut eleifend tortor finibus.</p>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script>
+    const eventlist = {
+        "5/23/2024" : "#hackathon",
+        "5/5/2024" : "#os-fest",
+        "4/19/2024" : "#ui-design-contest"
+    }
+    
+    $(document).ready(function() {
 
+        $(function() {
+            $(".datepicker").datepicker({
+                prevText: '<i class="fa fa-fw fa-angle-left"></i>',
+                nextText: '<i class="fa fa-fw fa-angle-right"></i>'
+            });
+        });
+
+        $(".datepicker").change(function() {
+            var date_select = $(this).datepicker('getDate').toLocaleDateString();
+            console.log(date_select);
+ 	        if (date_select in eventlist) {
+                window.location.replace(eventlist[date_select]);
+                console.log(eventlist[date_select]);
+            }
+        })
+
+    });
+    </script>
 </body>
 
 </html>
