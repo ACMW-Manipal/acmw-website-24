@@ -1,7 +1,6 @@
 body {
     background-color: #b3cde0;
 }
-
 .navbar{
     position: fixed;
     width: 100%;
@@ -125,6 +124,7 @@ button {
 }
 .datepicker .ui-datepicker-calendar .ui-state-highlight:hover {
   color: #fff;
+}
 .btn-primary {
     background-color: #6497b1;
     border-color: #6497b1;
@@ -236,3 +236,10 @@ button {
     cursor: pointer;
 }
 
+h1 {
+    margin-top: 15%;
+}
+
+.event-info {
+    margin-top: 5%;
+}
