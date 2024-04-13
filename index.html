@@ -9,6 +9,30 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      .scroll-wrapper {
+        display: flex;
+        overflow-x: hidden; /* Hide scrollbar */
+        white-space: nowrap;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .scroll-item {
+        flex: 0 0 auto;
+        width: 300px; /* Adjust width as needed */
+        margin-right: 10px; /* Adjust spacing between items */
+      }
+      .scroll-item img {
+        width: 100%;
+        height: 300px;
+      }
+      .titlepic{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+      }
+    </style>
 </head>
 
 <body>
@@ -51,6 +75,7 @@
       padding: 5px;
       height: 100%;
       color: #4682b4;
+      margin-bottom: 5px;
     }
     .card-img-top {
       padding: 10px;
@@ -142,22 +167,57 @@
          </section>
 
         <!-- Picture Gallery Section -->
-        <section id="gallery">
-            <h2 class="text-center">Picture Gallery</h2>
-            <p class="text-center">all pics here.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <!--image here pls-->
-                </div>
-                <div class="col-md-4">
-                     <!--image here pls-->
-                </div>
-                <div class="col-md-4">
-                    <!--image here pls-->
-                </div>
+            <h2 class="titlepic">Picture Gallery</h2>
+            
+            <div class="scroll-wrapper" id="scrollContainer">
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/pz4vZQDqM4.png" alt="Image 1">
+              </div>
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/FyLqMgBZ5B.png" alt="Image 2">
+              </div>
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/NJaYxKANm0.png" alt="Image 3">
+              </div>
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/TkKaRRwywp.png" alt="Image 4">
+              </div>
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/3LJjwHG0vk.png" alt="Image 5">
+              </div>
+              <!-- Duplicate the images to create the infinite effect -->
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/pz4vZQDqM4.png" alt="Image 1">
+              </div>
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/FyLqMgBZ5B.png" alt="Image 2">
+              </div>
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/NJaYxKANm0.png" alt="Image 3">
+              </div>
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/TkKaRRwywp.png" alt="Image 4">
+              </div>
+              <div class="scroll-item">
+                <img src="https://imagetolink.com/ib/3LJjwHG0vk.png" alt="Image 5">
+              </div>
             </div>
-        </section>
-
+            
+            <script>
+              const container = document.getElementById('scrollContainer');
+              let scrollPosition = 0;
+              const scrollSpeed = 2;
+            
+              function scrollContainer() {
+                scrollPosition += scrollSpeed;
+                container.scrollLeft = scrollPosition;
+                if (scrollPosition >= container.scrollWidth / 2) {
+                  scrollPosition = 0;
+                }
+              }
+            
+              setInterval(scrollContainer, 30);
+            </script>
         <!-- Member Names Section -->
         <section id="members">
             <h2 class="text-center">Member Names</h2>
